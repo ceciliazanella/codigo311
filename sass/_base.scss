@@ -1,0 +1,56 @@
+/*--- VARIABLES ---*/
+
+/*--- COLORES Código 3.11 ---*/
+
+$principalcolor: #36213e;
+$supportcolor: #554971;
+$secundarycolor: #1c6e8c;
+$terciarycolor: #63768D;
+
+$neutralcolor: #605856;
+$ultraligthcolor: #D0CCD0;
+
+/*--- TIPOGRAFÍAS Código 3.11 ---*/
+
+//Family Fonts//
+
+$principalfont: "Poppins", sans-serif;
+$decorativefont: "Satisfy", cursive;
+
+// --- --- --- //
+
+/*--- RESET ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: $principalfont;
+}
+
+a {
+    text-decoration: none;
+    text-transform: bold;
+    color: $ultraligthcolor;
+}
+
+i {
+    font-size: 2rem;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    @extend ol;
+}
+
+//--- RESPONSIVE 1000px ---//
+@mixin md-1000 {
+    @media(min-width: 1000px) {
+        @content;
+    }
+}

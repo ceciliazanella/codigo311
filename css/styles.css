@@ -1,0 +1,325 @@
+@charset "UTF-8";
+/*--- VARIABLES ---*/
+/*--- COLORES Código 3.11 ---*/
+/*--- TIPOGRAFÍAS Código 3.11 ---*/
+/*--- RESET ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: bold;
+  color: #D0CCD0;
+}
+
+i {
+  font-size: 2rem;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-color: #D0CCD0;
+  width: 100%;
+  height: 800px;
+  padding: 4rem;
+}
+.main h1 {
+  color: #36213e;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+/*COMPONENTS*/
+.header {
+  display: flex;
+}
+.header .header_nav {
+  width: 100%;
+  height: 300px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  color: #36213e;
+}
+.header .navbar img {
+  width: 33%;
+}
+.header .navbar .detalle {
+  font-family: "Satisfy", cursive;
+  color: #1c6e8c;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.header .navbar .offcanvas {
+  font-family: "Poppins", sans-serif;
+  color: #36213e;
+  font-weight: 900;
+}
+.header .navbar .offcanvas .offcanvas-header {
+  font-family: "Poppins", sans-serif;
+  color: #36213e;
+}
+.header .navbar .offcanvas .offcanvas-header h5 {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: -5rem;
+}
+.header .navbar .offcanvas .offcanvas-body {
+  font-family: "Poppins", sans-serif;
+  color: #1c6e8c;
+  font-weight: 600;
+}
+.header .navbar .offcanvas .offcanvas-body .nav-link.active {
+  color: #63768D;
+  font-weight: 600;
+}
+.header .navbar .offcanvas .offcanvas-body .nav-link {
+  font-family: "Poppins", sans-serif;
+  color: #1c6e8c;
+  font-weight: 600;
+}
+.header .navbar .offcanvas .nav-link:hover {
+  color: #36213e;
+}
+.header .navbar .dropdown-menu {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: #1c6e8c;
+  font-weight: 600;
+}
+.header .navbar .dropdown-menu hr {
+  width: 90%;
+  border: solid 2px;
+  border-radius: 1rem;
+  color: #554971;
+}
+.header .navbar .dropdown-menu .dropdown-item {
+  font-family: "Poppins", sans-serif;
+  color: #63768D;
+  font-weight: 400;
+}
+.header .navbar .dropdown-menu .dropdown-item:hover {
+  color: #1c6e8c;
+}
+.header .navbar form {
+  font-family: "Poppins", sans-serif;
+  color: #36213e;
+  font-weight: 600;
+}
+.header .navbar form input {
+  border-radius: 1rem 0 1rem 0;
+}
+.header .navbar form .form-control {
+  font-style: italic;
+  box-shadow: 1px 1px 2px #554971;
+}
+.header .navbar form .form-control:focus {
+  cursor: text;
+  outline: none;
+  border: none;
+  box-shadow: inset 1px 1px 5px #36213e;
+}
+.header .navbar form button {
+  border: none;
+  border-radius: 0 0.8rem 0 0.8rem;
+  font-weight: 400;
+  color: #554971;
+  box-shadow: 1px 1px 2px #554971;
+  border-color: #554971;
+}
+.header .navbar form button:hover {
+  font-weight: 600;
+  color: #D0CCD0;
+  background-color: #554971;
+  box-shadow: inset 1px 1px 5px #36213e;
+}
+
+.footer {
+  width: 100%;
+  height: 4000px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer_formularios {
+  background-color: #1c6e8c;
+  width: 100%;
+  height: 1000px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #D0CCD0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .footer .footer_formularios {
+    height: 600px;
+    padding: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+.footer .footer_formularios .footer_formularios---titulo h2 {
+  font-size: 2rem;
+}
+.footer .footer_formularios .footer_formularios---titulo h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.footer .footer_formularios input {
+  height: 40px;
+  border-radius: 1rem 0 1rem 0;
+  box-shadow: 2px 2px 5px #36213e;
+  color: #1c6e8c;
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 0 1rem;
+}
+.footer .footer_formularios input:focus {
+  outline: none;
+  border: none;
+  cursor: text;
+  box-shadow: inset 2px 2px 6px #36213e;
+}
+.footer .footer_formularios .footer_formularios---acceder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(85, 73, 113, 0.452);
+  border-radius: 0 2rem 0 2rem;
+  box-shadow: 2px 2px 6px #36213e;
+  padding: 2em;
+  gap: 1.15rem;
+}
+.footer .footer_formularios .footer_formularios---acceder h4 {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.footer .footer_formularios .footer_formularios---acceder h5 {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.footer .footer_formularios .footer_formularios---acceder form {
+  gap: 2rem;
+}
+.footer .footer_formularios .footer_formularios---registrarse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(85, 73, 113, 0.452);
+  border-radius: 2rem 0 2rem 0;
+  box-shadow: 2px 2px 6px #36213e;
+  padding: 2em;
+  gap: 1rem;
+}
+.footer .footer_formularios .footer_formularios---registrarse h4 {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.footer .footer_formularios .footer_formularios---registrarse h5 {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.footer .footer_formularios .footer_formularios---registrarse form {
+  gap: 2rem;
+}
+.footer .footer_redes {
+  background-color: #36213e;
+  width: 100%;
+  height: 750px;
+  padding: 4rem;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #63768D;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .footer .footer_redes {
+    height: 250px;
+    padding: 10rem 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer .footer_redes h2 {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 2rem;
+  text-align: left;
+}
+@media (min-width: 1000px) {
+  .footer .footer_redes h2 {
+    width: 70%;
+  }
+}
+.footer .footer_redes h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.footer .footer_redes i {
+  color: #63768D;
+  font-size: 1.5rem;
+}
+.footer .grosor {
+  font-weight: 600;
+}
+.footer i:hover {
+  color: #D0CCD0;
+}
+.footer .boton_value {
+  background-color: #D0CCD0;
+  border: none;
+  border-radius: 0 0.8rem 0 0.8rem;
+  box-shadow: 1px 1px 2px #554971;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #36213e;
+}
+.footer .boton_value:hover {
+  background-color: #36213e;
+  font-weight: 500;
+  color: #D0CCD0;
+  box-shadow: inset 2px 2px 6px #554971;
+}
+
+/*# sourceMappingURL=styles.css.map */

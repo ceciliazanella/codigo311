@@ -1,0 +1,13 @@
+.main_h1 {
+    background-color: $ultraligthcolor;
+    width: 100%;
+    height: 100px;
+    padding: 4rem;
+
+    & h1 {
+        color: $principalcolor;
+        font-family: $principalfont;
+        font-size: 3rem;
+    }
+    
+}
