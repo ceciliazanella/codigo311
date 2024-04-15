@@ -3,13 +3,18 @@
 
     & .header_nav {
         width: 100%;
-        height: 300px;
+        height: 200px;
         padding: 2rem;
 
         display: flex;
 
         align-items: center;
         justify-content: space-between;
+
+        @include md-1000 {
+            height: 400px;
+            padding: 4rem;
+        }
     }
 
     & .navbar {
